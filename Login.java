@@ -37,9 +37,9 @@ public class Login {
         studentDetails2.grade = 'B';
 
         Login studentDetails3 = new Login();
-        // studentDetails3.name = "Murugan";
-        // studentDetails3.age = 14;
-        // studentDetails3.grade = 'C';
+        studentDetails3.name = "Murugan";
+        studentDetails3.age = 14;
+        studentDetails3.grade = 'C';
 
         System.out.println(Login.school);
 
