@@ -1,6 +1,11 @@
 public class OverLoading{
+
     public static void main(String[] args){
         OverLoading transaction = new OverLoading();
+
+        num();
+        OverLoading.num();
+        transaction.num();
 
         transaction.process();
         boolean bank = transaction.process("ACC101", 12000);
@@ -10,6 +15,11 @@ public class OverLoading{
         System.out.println(bank);
         System.out.println(online);
         System.out.println(national);
+        
+    }
+
+    static void num(){
+        System.out.println("Static method here working....");
     }
 
     void process(){
