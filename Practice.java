@@ -4,7 +4,10 @@ public class Practice{
     // String naam;
 
 
-    public Practice(){System.out.println("Hey");}
+    public Practice(){
+        System.out.println("Hey");
+    }
+
     public void hello(){
         System.out.println("Hello method ... ");
     }
