@@ -6,7 +6,15 @@ public class ActorSivakumar implements Actor {
     int age;
 
     public static void main(String[] args) {
-        ActorSivakumar as = new ActorSivakumar(65, “Audi Car”);
+        ActorSivakumar as = new ActorSivakumar(65, "Audi Car");
+        as.speaking();
+        System.out.println(ActorSivakumar.address);
+
+        Actor ac = new ActorSivakumar();
+        ac.act();
+        ac.dance();
+        ac.sing();
+        System.out.println(ac.address);
     }
 
     public ActorSivakumar(int age,String car){
@@ -14,8 +22,12 @@ public class ActorSivakumar implements Actor {
         this.car = car;
     }
 
-    public void speaking(){
+    public ActorSivakumar(){
+        System.out.println("no argument constructor");
+    }
 
+    public void speaking(){
+        System.out.println("It's Speaaaking method...");
     }
 
     @Override
