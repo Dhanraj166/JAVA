@@ -23,12 +23,11 @@ public class Laptop {
         l2.compareLaptop(l1);
     }
 
-    public void compareLaptop(Laptop l1) {
-
+    public static void compareLaptop(Laptop l1) {
         System.out.println("Laptop 1 Price: " + this.price);
         System.out.println("Laptop 2 Price: " + l1.price);
 
-        if (this.price > l1.price) {
+        if (this.price > l1.price) {    
             System.out.println("Laptop 1 is more expensive");
         } else if (this.price < l1.price) {
             System.out.println("Laptop 2 is more expensive");
